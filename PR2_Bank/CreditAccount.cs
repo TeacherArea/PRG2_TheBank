@@ -24,7 +24,7 @@ namespace PR2_Bank
             }
             else
             {
-                Console.WriteLine("Insufficient funds!");
+                Console.WriteLine("Otillräckliga medel på kontot!");
             }
         }
     }

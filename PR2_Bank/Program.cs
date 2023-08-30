@@ -11,15 +11,15 @@ class Program
         Bank bank = new Bank();
 
         // Skapa ett lämpligt användargränssitt som gör att en användare kan mata in värden iställer för att ha statiska värden.
-        BankAccount savingsAccount = bank.CreateAccount("savings", "SA001", 1000, 0.1m);
-        BankAccount creditAccount = bank.CreateAccount("credit", "CA001", 500, 1000);
+        BankAccount savingsAccount = bank.CreateAccount("sparkonto", "SA001", 1000, 0.1m);
+        BankAccount creditAccount = bank.CreateAccount("kreditkonto", "CA001", 500, 1000);
 
         // Skapa ett lämpligt användargränssitt för att visa värdena
         savingsAccount.Deposit(500);
         ((SavingsAccount)savingsAccount).ApplyInterest();
-        Console.WriteLine("Savings Account Balance: " + savingsAccount.GetBalance());
+        Console.WriteLine("Sparkonto kontoutdrag: " + savingsAccount.GetBalance());
 
         creditAccount.Withdraw(800);
-        Console.WriteLine("Credit Account Balance: " + creditAccount.GetBalance());
+        Console.WriteLine("Kreditkonto kontoutdrag: " + creditAccount.GetBalance());
     }
 }
