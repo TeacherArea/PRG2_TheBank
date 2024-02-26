@@ -17,9 +17,6 @@ class Program
         // Skapa ett lämpligt användargränssitt för att visa värdena
         savingsAccount.Deposit(500);
         ((SavingsAccount)savingsAccount).ApplyInterest();
-        Console.WriteLine("Sparkonto kontoutdrag: " + savingsAccount.GetBalance());
-
         creditAccount.Withdraw(800);
-        Console.WriteLine("Kreditkonto kontoutdrag: " + creditAccount.GetBalance());
     }
 }
