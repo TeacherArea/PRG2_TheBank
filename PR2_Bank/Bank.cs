@@ -23,10 +23,7 @@ namespace PR2_Bank
             {
                 account = new SavingsAccount(accountNumber, initialBalance, interest);
             }
-            else if (accountType == "kreditkonto")
-            {
-                account = new CreditAccount(accountNumber, initialBalance, interest);
-            }
+
             else
             {
                 Console.WriteLine("Ogilitlig kontoslag! Välj mellan sparkonto eller kreditkonto.");
