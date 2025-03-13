@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PR2_Bank
 {
-    internal class BankAccount
+    internal abstract class BankAccount
     {
         public string AccountNumber { get; }
         protected decimal Balance { get; set; }
